@@ -1,0 +1,94 @@
+/* src/styles/App.scss */
+#root {
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto; /* Centers the form horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+
+  .form-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.converted-amount {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto; /* Centers the converted amount display */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #e9ffe9; /* Light green background */
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+.exchange-container {
+  text-align: center;
+
+  .exchange-rates {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+
+    li {
+      width: 20%; /* Each item takes up 20% of the container width */
+      box-sizing: border-box;
+      padding: 10px;
+    }
+  }
+}
